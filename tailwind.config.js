@@ -13,6 +13,12 @@ module.exports = {
       colors: {
         biru: '#086BCE'
       },
+      height: {
+        100: '94.7vh'
+      },
+      fontSize: {
+        'xxs': '.72rem'
+      }
     },
   },
   plugins: [],
