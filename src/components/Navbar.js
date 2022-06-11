@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Navbar({ fixed }) {
+export default function Navbar() {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
@@ -24,47 +24,47 @@ export default function Navbar({ fixed }) {
 
           <div
             className={
-              "lg:flex items-center w-full md:flex md:items-center xl:container md:mx-auto xl:px-32" +
-              (navbarOpen ? " flex" : " hidden")
+              "lg:flex items-center w-full md:flex md:items-center xl:container md:mx-auto xl:px-32 2xl:px-64 " +
+              (navbarOpen ? " flex md:static" : " hidden")
             }
             id="example-navbar-danger"
           > 
             <ul className="flex flex-col lg:flex-row lg:ml-auto w-full h-100 md:flex-row md:h-auto md:items-center md:justify-around md:py-2">
-              <li className="nav-item px-3 relative border-b border-[#69696E] pb-4 md:border-none md:hidden">
+              <li className="nav-item px-3 relative border-b border-p pb-4 md:border-none md:hidden">
                 <label class="relative block md:hidden md:border-none">
                   <span class="absolute inset-y-0 left-0 flex items-center pl-2">
-                    <i class='bx bx-search-alt-2 text-[#69696E]' ></i>
+                    <i class='bx bx-search-alt-2 text-p' ></i>
                   </span>
-                  <input class="placeholder:text-[#69696E] block bg-[#1D1D1F] w-full rounded-md py-1.5 pl-9 pr-3 shadow-sm focus:outline-none sm:text-sm text-slate-200 font-semibold placeholder:font-normal placeholder:font-inter placeholder:tracking-tight" placeholder="Cari di apple.com" type="text" name="search"/>
+                  <input class="placeholder:text-p block bg-[#1D1D1F] w-full rounded-md py-1.5 pl-9 pr-3 shadow-sm focus:outline-none sm:text-sm text-slate-200 font-semibold placeholder:font-normal placeholder:font-inter placeholder:tracking-tight" placeholder="Cari di apple.com" type="text" name="search"/>
                 </label>
               </li>
-              <li className="nav-item font-inter text-[#ccc] py-2.5 px-12 border-b border-[#69696E] md:p-0 md:border-none hidden md:inline-block">
+              <li className="nav-item font-inter text-[#ccc] py-2.5 px-12 border-b border-p md:p-0 md:border-none hidden md:inline-block">
                   <a className="absolute w-full text-center text-[#ccc]  cursor-default md:text-left md:static" href="#pablo">
                     <i class='bx bxl-apple text-2xl cursor-pointer hover:text-slate-50 md:text-lg'></i>
                 </a>
               </li>
-              <li className="nav-item font-inter text-[#ccc] py-2.5 px-12 border-b border-[#69696E] md:p-0 md:text-xxs md:font-sans  md:border-none">
+              <li className="nav-item font-inter text-[#ccc] py-2.5 px-12 border-b border-p md:p-0 md:text-xxs md:font-sans  md:border-none">
                 <a href="#" className="hover:text-slate-200">Mac</a>
               </li>
-              <li className="nav-item font-inter text-[#ccc] py-2.5 px-12 border-b border-[#69696E] md:p-0 md:text-xxs md:font-sans md:border-none">
+              <li className="nav-item font-inter text-[#ccc] py-2.5 px-12 border-b border-p md:p-0 md:text-xxs md:font-sans md:border-none">
                 <a href="#" className="hover:text-slate-200">iPad</a>
               </li>
-              <li className="nav-item font-inter text-[#ccc] py-2.5 px-12 border-b border-[#69696E] md:p-0 md:text-xxs md:font-sans md:border-none">
+              <li className="nav-item font-inter text-[#ccc] py-2.5 px-12 border-b border-p md:p-0 md:text-xxs md:font-sans md:border-none">
                 <a href="#" className="hover:text-slate-200">iPhone</a>
               </li>
-              <li className="nav-item font-inter text-[#ccc] py-2.5 px-12 border-b border-[#69696E] md:p-0 md:text-xxs md:font-sans md:border-none">
+              <li className="nav-item font-inter text-[#ccc] py-2.5 px-12 border-b border-p md:p-0 md:text-xxs md:font-sans md:border-none">
                 <a href="#" className="hover:text-slate-200">Watch</a>
               </li>
-              <li className="nav-item font-inter text-[#ccc] py-2.5 px-12 border-b border-[#69696E] md:p-0 md:text-xxs md:font-sans md:border-none">
+              <li className="nav-item font-inter text-[#ccc] py-2.5 px-12 border-b border-p md:p-0 md:text-xxs md:font-sans md:border-none">
                 <a href="#" className="hover:text-slate-200">AirPods</a>
               </li>
-              <li className="nav-item font-inter text-[#ccc] py-2.5 px-12 border-b border-[#69696E] md:p-0 md:text-xxs md:font-sans md:border-none">
+              <li className="nav-item font-inter text-[#ccc] py-2.5 px-12 border-b border-p md:p-0 md:text-xxs md:font-sans md:border-none">
                 <a href="#" className="hover:text-slate-200">TV & Rumah</a>
               </li>
-              <li className="nav-item font-inter text-[#ccc] py-2.5 px-12 border-b border-[#69696E] md:p-0 md:text-xxs md:font-sans md:border-none">
+              <li className="nav-item font-inter text-[#ccc] py-2.5 px-12 border-b border-p md:p-0 md:text-xxs md:font-sans md:border-none">
                 <a href="#" className="hover:text-slate-200">Hanya di Apple</a>
               </li>
-              <li className="nav-item font-inter text-[#ccc] py-2.5 px-12 border-b border-[#69696E] md:p-0 md:text-xxs md:font-sans md:border-none">
+              <li className="nav-item font-inter text-[#ccc] py-2.5 px-12 border-b border-p md:p-0 md:text-xxs md:font-sans md:border-none">
                 <a href="#" className="hover:text-slate-200">Dukungan</a>
               </li>
               <li className="nav-item font-inter text-[#ccc] py-2.5 px-12 md:p-0 md:text-xxs md:font-sans">

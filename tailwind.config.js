@@ -11,7 +11,8 @@ module.exports = {
         pacifico: ['Pacifico']
       },
       colors: {
-        biru: '#086BCE'
+        biru: '#086BCE',
+        p: '#69696E'
       },
       height: {
         100: '94.7vh'
