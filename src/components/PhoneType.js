@@ -33,7 +33,7 @@ export default function PhoneType() {
   return (
     <>
         <div className="relative flex items-center">
-            <div id="slider" className="w-full overflow-x-hidden scroll whitespace-nowrap scroll-smooth bg-[#FBFBFD] h-32 md:flex md:justify-evenly md:px-8 md:items-center xl:container md:mx-auto xl:px-32 2xl:px-64">
+            <div id="slider" className="w-full overflow-x-hidden scroll whitespace-nowrap scroll-smooth bg-[#FBFBFD] h-30  md:flex md:justify-evenly md:px-8 md:items-center xl:container md:mx-auto xl:px-32 2xl:px-64">
                 <MdChevronLeft className={`first-letter:opacity-50 cursor-pointer hover:opacity-100 top-1/3 z-10 md:hidden ${left ? "absolute" : "hidden"} `} onClick={slideLeft} size={20} />
 
                 <a href="#" className="inline-block text-center py-2 px-4">
