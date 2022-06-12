@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Image11 from '../assets/image11.png'
 import Image12 from '../assets/image12.png'
 import Image13 from '../assets/image13.png'
@@ -11,7 +11,7 @@ import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 
 import {Link} from 'react-router-dom'
 
-export default function PhoneType() {
+export default function PhoneType({data}) {
 
   const [left, setLeft] = React.useState(false)
   const [right, seRight] = React.useState(true)
@@ -30,6 +30,11 @@ export default function PhoneType() {
     setLeft(true)
     seRight(false)
   };
+
+
+  useEffect(() => {
+    console.log(data);
+  },[])
 
 
   return (
