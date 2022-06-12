@@ -9,6 +9,8 @@ import Image17 from '../assets/image17.png'
 
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 
+import {Link} from 'react-router-dom'
+
 export default function PhoneType() {
 
   const [left, setLeft] = React.useState(false)
@@ -46,11 +48,11 @@ export default function PhoneType() {
                     <p className="text-sm text-p mt-2">iPhone 13</p>
                     <p className="text-xs text-orange-700">Baru</p>
                 </a>
-                <a href="#" className="inline-block text-center py-2 px-4">
+                <Link to="/iphone-se" className="inline-block text-center py-2 px-4">
                     <img src={Image12} alt="" className="inline-block cursor-pointer hover:scale-105 ease-in-out duration-300"/>
                     <p className="text-sm text-p mt-2">iPhone SE</p>
                     <p className="text-xs text-orange-700">Baru</p>
-                </a>
+                </Link>
                 <a href="#" className="inline-block text-center py-2 px-4">
                     <img src={Image11} alt="" className="inline-block cursor-pointer hover:scale-105 ease-in-out duration-300"/>
                     <p className="text-sm text-p mt-2">iPhone 12</p>

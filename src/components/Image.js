@@ -48,6 +48,8 @@ import Image9 from '../assets/image9.png'
 import Image9_2 from '../assets/image9-2.png'
 import Image9_1 from '../assets/image9-1.png'
 
+import Detail1 from '../assets/detail1.jpg'
+
 export { 
     Image1, 
     Image1_2, 
@@ -97,4 +99,5 @@ export {
     Image9,
     Image9_2,
     Image9_1,
+    Detail1
 };

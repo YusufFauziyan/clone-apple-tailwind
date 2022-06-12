@@ -273,7 +273,7 @@ export default function Home() {
                         <a href="#" className='text-link hover:underline inline-block md:font-semibold'>Selengkapnya<i class='bx bx-chevron-right relative top-0.5'></i></a>
                     </div>
                 </div>
-                <img src={Apps} alt="" className=" absolute bottom-10 left-24 md:bottom-14 md:left-20 xl:left-40 2xl:left-60" />
+                <img src={Apps} alt="" className=" absolute bottom-10 left-1/2 right-1/2 -translate-x-40 md:left-20 md:right-0 md:translate-x-0 xl:left-40 2xl:left-60" />
         </div>
 
         {/* footer */}
