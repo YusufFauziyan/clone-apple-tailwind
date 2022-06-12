@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom'
 
 export default function Navbar() {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
@@ -17,9 +18,9 @@ export default function Navbar() {
               </div>
               
             </button>
-            <a className="absolute w-full text-center text-[#ccc]  cursor-default md:text-left md:static" href="#pablo">
+            <Link to='/' className="absolute w-full text-center text-[#ccc]  cursor-default md:text-left md:static">
               <i class='bx bxl-apple text-2xl cursor-pointer hover:text-slate-50'></i>
-            </a>
+            </Link>
           </div>
 
           <div
@@ -39,9 +40,9 @@ export default function Navbar() {
                 </label>
               </li>
               <li className="nav-item font-inter text-[#ccc] py-2.5 px-12 border-b border-p md:p-0 md:border-none hidden md:inline-block">
-                  <a className="absolute w-full text-center text-[#ccc]  cursor-default md:text-left md:static" href="#pablo">
+                  <Link to ='/' className="absolute w-full text-center text-[#ccc]  cursor-default md:text-left md:static" href="#pablo">
                     <i class='bx bxl-apple text-2xl cursor-pointer hover:text-slate-50 md:text-lg'></i>
-                </a>
+                </Link>
               </li>
               <li className="nav-item font-inter text-[#ccc] py-2.5 px-12 border-b border-p md:p-0 md:text-xxs md:font-sans  md:border-none">
                 <a href="#" className="hover:text-slate-200">Mac</a>
@@ -50,7 +51,7 @@ export default function Navbar() {
                 <a href="#" className="hover:text-slate-200">iPad</a>
               </li>
               <li className="nav-item font-inter text-[#ccc] py-2.5 px-12 border-b border-p md:p-0 md:text-xxs md:font-sans md:border-none">
-                <a href="#" className="hover:text-slate-200">iPhone</a>
+                <Link to="/iphone" className="hover:text-slate-200">iPhone</Link>
               </li>
               <li className="nav-item font-inter text-[#ccc] py-2.5 px-12 border-b border-p md:p-0 md:text-xxs md:font-sans md:border-none">
                 <a href="#" className="hover:text-slate-200">Watch</a>

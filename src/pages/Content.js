@@ -1,28 +1,15 @@
 import React from 'react'
 
 // image
-import Image1 from '../assets/image1.png'
-import Image1_2 from '../assets/image1-1.png'
-import Image2 from '../assets/image2.png'
-import Image3 from '../assets/image3.png'
-import Image3_1 from '../assets/image3-1.png'
-import Image3_2 from '../assets/image3-2.png'
-import Image4 from '../assets/image4.png'
-import Image5 from '../assets/image5.png'
-import Image5_1 from '../assets/image5-1.png'
-import Image6 from '../assets/image6.png'
-import Image6_1 from '../assets/image6-1.png'
-import Image6_2 from '../assets/image6-2.png'
-import Image7 from '../assets/image7.png'
-import Image7_1 from '../assets/image7-1.png'
-import Image8 from '../assets/image8.png'
-import Image9 from '../assets/image9.png'
-import Image9_2 from '../assets/image9-2.png'
-import Image9_1 from '../assets/image9-1.png'
+import {Image1, Image1_2, Image2, Image3, Image3_1, Image3_2, Image4, Image5, Image5_1, Image6, Image6_1, Image6_2, Image7, Image7_1, Image8, Image9, Image9_2, Image9_1,} from '../components/Image'
+
+import Footer from '../components/Footer'
+import Navbar from "../components/Navbar";
 
 export default function Content () {
     return(
         <>
+            <Navbar />
             <div className=" w-full mx-auto">
                 <div className="pt-20 md:pt-24 flex flex-col items-center w-full text-center bg-slate-50">
                     <h1 className='font-semibold text-4xl text-slate-900 tracking-tight md:text-6xl md:tracking-tighter xl:text-7xl'>iPhone 13 Pro</h1>
@@ -153,7 +140,8 @@ export default function Content () {
                 </div>
                 
                 {/* footer */}
-                <div className="mx-auto p-4 bg-slate-50 mt-4 text-xs text-slate-500 md:text-sm md:px-6 xl:px-20 2xl:px-60">
+                <Footer />
+                {/* <div className="mx-auto p-4 bg-slate-50 mt-4 text-xs text-slate-500 md:text-sm md:px-6 xl:px-20 2xl:px-60">
                     <p>*Rp 69.000/bulan setelah percobaan gratis. Satu paket langganan untuk tiap grup Keluarga Berbagi. Penawaran berlaku selama 3 bulan setelah aktivasi perangkat yang memenuhi syarat. Paket diperbarui otomatis, kecuali dibatalkan. Pembatasan dan syarat lainnya berlaku.</p>
                     <p className='mt-4'>Rp 69.000/bulan setelah percobaan gratis. Hanya satu penawaran per ID Apple dan hanya satu penawaran per keluarga jika Anda tergabung dalam grup Keluarga Berbagi, terlepas dari jumlah perangkat yang dibeli oleh Anda atau keluarga Anda. Penaw\id\iphone-13-pro\aran ini tidak tersedia jika Anda atau Keluarga Anda sudah pernah menerima penawaran Apple TV+ selama satu tahun gratis. Penawaran berlaku selama 3 bulan setelah aktivasi perangkat yang memenuhi syarat. Paket diperbarui otomatis, kecuali dibatalkan. Pembatasan dan syarat lainnya berlaku.</p>
                     <hr className='w-full border-x-2 my-4 mx-auto'/>
@@ -193,7 +181,7 @@ export default function Content () {
                         <a href="#" className='hover:underline px-2 border-r-2'>Legal</a>
                         <a href="#" className=' hover:underline pl-2'>Peta Situs</a>
                     </div>
-                </div>
+                </div> */}
 
             </div>
         </>

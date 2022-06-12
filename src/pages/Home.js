@@ -1,28 +1,19 @@
 import React from "react";
-import Image1 from '../assets/image1.png'
-import Image1_2 from '../assets/image1-2.png'
-import Image6_3 from '../assets/image6-3.png'
-import Image6_4 from '../assets/image6-4.png'
-import Image18 from '../assets/image-18.png'
-import Image18_1 from '../assets/image-18-1.png'
-import Image18_2 from '../assets/image-18-2.png'
-import Image19 from '../assets/image-19.png'
-import Image19_1 from '../assets/image-19-1.png'
-import Camera_1 from '../assets/kamera-1.png'
-import Camera_2 from '../assets/kamera-2.png'
-import Chip from '../assets/processor-1.png'
-import Signal from '../assets/signal.png'
-import Battery from '../assets/battery.png'
-import FaceId from '../assets/faceId.png'
-import Image20 from '../assets/image-20.png'
-import Image20_1 from '../assets/image-20-1.png'
-import Image20_2 from '../assets/image-20-2.png'
+
+// image
+import { Image1, Image1_2, Image6_3, Image6_4, Image18,  Image18_1,  Image18_2, Image19, Image19_1, Camera_1, Camera_2, Chip, Signal, Battery, FaceId, Image20, Image20_1, Image20_2, Image21, Image21_1, Image21_2, Magsafe, Magsafe_1, Magsafe_2, Airtag, Airtag_1, Airtag_2, Airpods, Airpods_1, Airpods_2, Privacy, Apps,} from '../components/Image';
+
+import Footer from '../components/Footer'
+import PhoneType from "../components/PhoneType"
+import Navbar from "../components/Navbar";
 
 
-export default function Navbar() {
+export default function Home() {
 
   return (
     <>
+      <Navbar />
+      <PhoneType />
       <div className="bg-[#F2F2F2] ">
         <div className="h-[675px] md:h-[580px] flex flex-col justify-end items-center xl:h-[878px] bg-white">
             <p className="font-semibold text-lg tracking-tighter md:text-xl xl:text-3xl">iPhone 13 Pro</p>
@@ -200,34 +191,43 @@ export default function Navbar() {
             <a href="#" className='text-link hover:underline w-full my-10 inline-block text-center text-xl tracking-tighter'>Bandingkan semua model iPhone<i class='bx bx-chevron-right relative top-0.5'></i></a>
         </div>
 
-        <p className="w-full font-semibold tracking-tighter text-4xl text-center pt-16 pb-12 xl:text-5xl">Aksesoris <br /> Unggulan</p>
+        <p className="w-full font-semibold tracking-tighter text-4xl text-center pt-16 pb-12 xl:text-5xl">Aksesori <br className="md:hidden"/> Unggulan</p>
 
-        <div className="flex flex-col pt-9 bg-white h-[445px] container mx-auto">
-            <div className="w-60 text-center mx-auto md:ml-10 md:my-auto md:w-80">
-                <p className="text-3xl font-semibold tracking-tighter pb-6 md:text-4xl">MagSafe</p>
-                <p className=" text-slate-600 md:text-lg">Langsung tempelkan ke dompet atau casing magnetik, atau keduanya. Dan dapatkan pengisian daya nirkabel yang lebih cepat.</p>
+        <div className="flex flex-col pt-9 bg-white h-[445px] md:container mx-auto relative xl:h-[530px]">
+            <div className="w-60 text-center mx-auto md:ml-10 md:my-auto md:w-80 xl:ml-40 2xl:ml-72">
+                <p className="text-3xl font-semibold tracking-tighter pb-6 md:text-4xl xl:text-5xl">MagSafe</p>
+                <p className=" text-slate-600 md:text-lg pb-1 ">Langsung tempelkan ke dompet atau casing magnetik, atau keduanya. Dan dapatkan pengisian daya nirkabel yang lebih cepat.</p>
+                <img src={Magsafe} alt="" className="w-full mt-12 md:hidden" />
             </div>
+            <img src={Magsafe_1} alt="" className="mt-12 hidden md:inline-block absolute right-5 bottom-0 xl:hidden" />
+            <img src={Magsafe_2} alt="" className="mt-12 hidden xl:inline-block absolute right-5 bottom-0" />
         </div>
 
-        <div className="flex flex-col pt-9 bg-white h-[580px] mt-3 md:items-end container mx-auto">
-            <div className="w-60 text-center mx-auto md:mx-0 md:my-auto md:w-80 md:mr-10">
-                <p className="text-3xl font-semibold tracking-tighter pb-4 md:text-4xl">AirTag</p>
-                <p className=" text-slate-600 md:text-lg">Tempel satu di kunci Anda. Satu lagi di tas Anda. Jika barang hilang, cukup gunakan aplikasi Lacak.</p>
-                <a href="#" className='text-link hover:underline mt-2 inline-block'>Selengkapnya<i class='bx bx-chevron-right relative top-0.5'></i></a>
+        <div className="flex flex-col pt-9 bg-white h-[510px] md:h-[375px] xl:h-[520px] mt-3 md:items-end md:container mx-auto relative overflow-hidden">
+            <div className="w-60 text-center mx-auto md:mx-0 md:my-auto md:w-80 md:mr-10 xl:mr-32 2xl:mr-52">
+                <p className="text-3xl font-semibold tracking-tighter pb-4 md:text-4xl xl:text-5xl">AirTag</p>
+                <p className=" text-slate-600 md:text-lg xl:text-lg xl:font-semibold">Tempel satu di kunci Anda. Satu lagi di tas Anda. Jika barang hilang, cukup gunakan aplikasi Lacak.</p>
+                <a href="#" className='text-link hover:underline mt-2 inline-block xl:text-xl'>Selengkapnya<i class='bx bx-chevron-right relative top-0.5'></i></a>
             </div>
+            <img src={Airtag} alt="" className=" absolute bottom-0 md:hidden" />
+            <img src={Airtag_1} alt="" className=" absolute hidden md:inline-block left-0 top-0 xl:hidden" />
+            <img src={Airtag_2} alt="" className=" absolute hidden xl:inline-block left-0 top-0" />
         </div>
 
-        <div className="flex flex-col pt-9 bg-white h-[350px] md:h-[580px] mt-3 md:items-end container mx-auto">
-            <div className="w-60 text-center mx-auto md:my-auto md:w-80">
-                <p className="text-3xl font-semibold tracking-tighter pb-4 md:text-4xl">AirPods</p>
-                <p className=" text-slate-600 md:text-lg">Jelajahi semua model AirPods dan temukan yang terbaik untuk Anda.</p>
-                <a href="#" className='text-link hover:underline mt-2 inline-block'>Selengkapnya<i class='bx bx-chevron-right relative top-0.5'></i></a>
+        <div className="flex flex-col pt-9 bg-white h-[400px] md:h-[450px] xl:h-[650px] mt-3 md:items-end md:container mx-auto overflow-hidden relative">
+            <div className="w-60 text-center mx-auto md:mt-4 md:w-80">
+                <p className="text-3xl font-semibold tracking-tighter pb-4 md:text-4xl xl:text-5xl">AirPods</p>
+                <p className=" text-slate-600 md:text-lg xl:font-semibold xl:text-xl">Jelajahi semua model AirPods dan temukan yang terbaik untuk Anda.</p>
+                <a href="#" className='text-link hover:underline mt-2 inline-block xl:font-semibold xl:text-lg'>Selengkapnya<i class='bx bx-chevron-right relative top-0.5'></i></a>
             </div>
+            <img src={Airpods} alt="" className=" absolute bottom-0 md:hidden" />
+            <img src={Airpods_1} alt="" className=" absolute bottom-0 md:inline-block hidden md:left-24 md:bottom-4 xl:hidden" />
+            <img src={Airpods_2} alt="" className=" absolute bottom-0 xl:inline-block hidden xl:left-24 xl:bottom-4 2xl:left-56" />
         </div>
 
         <p className="w-full font-semibold tracking-tighter text-4xl text-center pt-16 pb-7 xl:text-5xl">Apa yang menjadikan <br />iPhone sebuah iPhone?</p>
 
-        <div className="bg-white flex justify-center items-center flex-col text-center relative container mx-auto">
+        <div className="bg-white flex justify-center items-center flex-col text-center relative md:container mx-auto">
             <img src={Image20} alt="" className="bg-no-repeat bg-center bg-cover w-full h-full md:hidden"/>
             <img src={Image20_1} alt="" className="bg-no-repeat bg-center bg-cover w-full h-full hidden md:inline-block xl:hidden"/>
             <img src={Image20_2} alt="" className="bg-no-repeat bg-center bg-cover w-full h-full hidden xl:inline-block"/>
@@ -242,39 +242,43 @@ export default function Navbar() {
         </div>
 
         <div className="md:flex md:container md:mx-auto md:gap-3">
-            <div className="flex flex-col pt-16 bg-white h-[450px] mt-3 container mx-auto">
+            <div className="flex flex-col pt-16 bg-white h-[430px] md:h-[380px] xl:h-[550px] 2xl:h-[650px] mt-3 md:container mx-auto relative overflow-hidden md:pt-8">
                 <div className="w-72 text-center mx-auto md:w-80 md:my-0 xl:w-96">
                     <p className="text-4xl font-semibold tracking-tighter pb-4 xl:text-5xl">Beralih ke iPhone<br/>begitu mudah.</p>
                     <a href="#" className='text-link hover:underline inline-block xl:text-lg'>Selengkapnya<i class='bx bx-chevron-right relative top-0.5'></i></a>
                 </div>
+                <img src={Image21} alt="" className=" absolute bottom-0 md:hidden" />
+                <img src={Image21_1} alt="" className=" absolute bottom-0 md:inline-block hidden xl:hidden" />
+                <img src={Image21_2} alt="" className=" absolute bottom-0 xl:inline-block hidden xl:left-0 2xl:w-full" />
             </div>
 
-            <div className="flex flex-col pt-16 bg-white h-[450px] mt-3 container mx-auto">
+            <div className="flex flex-col pt-16 bg-white h-[430px] mt-3 md:container mx-auto md:h-[380px] xl:h-[550px] 2xl:h-[650px] relative md:pt-0">
                 <div className="w-64 text-center mx-auto my-auto md:w-80 pt-20 md:pt-40">
                     <p className="text-4xl font-semibold tracking-tighter pb-4 xl:text-5xl">Privasi</p>
-                    <p className=" text-slate-600 md:text-lg xl:text-lg">Anda yang menentukan apa yang Anda bagikan.</p>
-                    <a href="#" className='text-link hover:underline inline-block'>Selengkapnya<i class='bx bx-chevron-right relative top-0.5'></i></a>
+                    <p className=" text-slate-600 md:text-lg xl:text-xl">Anda yang menentukan apa yang Anda bagikan.</p>
+                    <a href="#" className='text-link hover:underline inline-block xl:text-lg xl:mt-2'>Selengkapnya<i class='bx bx-chevron-right relative top-0.5'></i></a>
                 </div>
+                <img src={Privacy} alt="" className=" absolute left-1/2 bottom-1/2 -translate-x-8 scale-125" />
             </div>
         </div>
 
         <p className="w-full font-semibold tracking-tighter text-4xl text-center pt-20 pb-9 xl:text-5xl">Dapatkan lebih dari <br /> iPhone Anda.</p>
 
-        <div className="flex flex-col pt-16 bg-white h-[510px] mt-3 container mx-auto">
-                <div className="w-64 text-center mx-auto my-auto md:w-80 pt-20 md:pt-40">
-                    <p className="text-4xl font-semibold tracking-tighter pb-4 xl:text-5xl">Privasi</p>
-                    <p className=" text-slate-600 md:text-lg xl:text-lg">Anda yang menentukan apa yang Anda bagikan.</p>
-                    <a href="#" className='text-link hover:underline inline-block'>Selengkapnya<i class='bx bx-chevron-right relative top-0.5'></i></a>
+        <div className="flex flex-col bg-white h-[510px] mt-3 container mx-auto relative md:flex-row md:justify-end md:items-center md:h-[380px]">
+                <div className="w-60 text-center mx-auto md:w-80 pt-10 md:mx-0 md:p-0 md:mr-6 xl:mr-40 2xl:mr-72">
+                    <p className="text-4xl font-semibold text-slate-800 tracking-tighter md:text-5xl"><i class='bx bxl-apple text-4.5xl'></i>One</p>
+                    <p className=" text-slate-600 font-semibold mt-4">Gabungkan hingga lima layanan Apple. Nikmati lebih banyak dengan harga lebih hemat.</p>
+                    <div className="flex mt-4 justify-between md:justify-evenly">
+                        <a href="#" className='text-link hover:underline inline-block md:font-semibold'>Coba gratis*<i class='bx bx-right-arrow-alt -rotate-45'></i></a>
+                        <a href="#" className='text-link hover:underline inline-block md:font-semibold'>Selengkapnya<i class='bx bx-chevron-right relative top-0.5'></i></a>
+                    </div>
                 </div>
+                <img src={Apps} alt="" className=" absolute bottom-10 left-24 md:bottom-14 md:left-20 xl:left-40 2xl:left-60" />
         </div>
 
-        <div className="flex flex-col pt-9 bg-white h-[950px] md:h-[580px] mt-4 md:items-end container mx-auto">
-            <div className="w-60 text-center mx-auto md:my-auto md:w-80">
-                <p className="text-3xl font-semibold tracking-tighter pb-4 md:text-4xl">AirPods</p>
-                <p className=" text-slate-600 md:text-lg">Jelajahi semua model AirPods dan temukan yang terbaik untuk Anda.</p>
-                <a href="#" className='text-link hover:underline mt-2 inline-block'>Selengkapnya<i class='bx bx-chevron-right relative top-0.5'></i></a>
-            </div>
-        </div>
+        {/* footer */}
+        <Footer />
+
        
       </div>
     </>
