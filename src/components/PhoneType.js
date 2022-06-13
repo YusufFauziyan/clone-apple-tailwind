@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import Image11 from '../assets/image11.png'
 import Image12 from '../assets/image12.png'
 import Image13 from '../assets/image13.png'
@@ -31,10 +31,9 @@ export default function PhoneType({data}) {
     seRight(false)
   };
 
-
   useEffect(() => {
     console.log(data);
-  },[])
+  })
 
 
   return (

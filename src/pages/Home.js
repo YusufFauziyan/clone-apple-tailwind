@@ -14,16 +14,14 @@ export default function Home() {
 
     const fetchData = async() => {
         const response = await axios.post("https://dev-scphonecmlcj.microgen.id/graphql" ,{
-            query: 'query products {products {name}}'
+            query: `query{brands(where: {name:"IPhone"}){id name products{name}}}` 
         })
-        setData(response.data.data.products)
+        setData(response.data.data.brands[0].products)
     }
 
     useEffect(() => {
         fetchData() 
     },[])
-
-
 
     return (
         <>
