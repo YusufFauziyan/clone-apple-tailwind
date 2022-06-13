@@ -31,9 +31,6 @@ export default function PhoneType({data}) {
     seRight(false)
   };
 
-  useEffect(() => {
-    console.log(data);
-  })
 
 
   return (
@@ -41,32 +38,41 @@ export default function PhoneType({data}) {
         <div className="relative flex items-center">
             <div id="slider" className="w-full overflow-x-hidden scroll whitespace-nowrap scroll-smooth bg-[#FBFBFD] h-30  md:flex md:justify-evenly md:px-8 md:items-center xl:container md:mx-auto xl:px-32 2xl:px-64">
                 <MdChevronLeft className={`first-letter:opacity-50 cursor-pointer hover:opacity-100 top-1/3 z-10 md:hidden ${left ? "absolute" : "hidden"} `} onClick={slideLeft} size={20} />
-
-                <a href="#" className="inline-block text-center py-2 px-4">
-                    <img src={Image11} alt="" className="inline-block cursor-pointer hover:scale-105 ease-in-out duration-300"/>
-                    <p className="text-sm text-p mt-2">iPhone 13 Pro</p>
-                    <p className="text-xs text-orange-700">Baru</p>
-                </a>
-                <a href="#" className="inline-block text-center py-2 px-4">
-                    <img src={Image11} alt="" className="inline-block cursor-pointer hover:scale-105 ease-in-out duration-300"/>
-                    <p className="text-sm text-p mt-2">iPhone 13</p>
-                    <p className="text-xs text-orange-700">Baru</p>
-                </a>
-                <Link to="/iphone-se" className="inline-block text-center py-2 px-4">
-                    <img src={Image12} alt="" className="inline-block cursor-pointer hover:scale-105 ease-in-out duration-300"/>
-                    <p className="text-sm text-p mt-2">iPhone SE</p>
-                    <p className="text-xs text-orange-700">Baru</p>
-                </Link>
-                <a href="#" className="inline-block text-center py-2 px-4">
-                    <img src={Image11} alt="" className="inline-block cursor-pointer hover:scale-105 ease-in-out duration-300"/>
-                    <p className="text-sm text-p mt-2">iPhone 12</p>
-                    <p className="text-xs text-orange-700">&nbsp;</p>
-                </a>
-                <a href="#" className="inline-block text-center py-2 px-4">
-                    <img src={Image13} alt="" className="inline-block cursor-pointer hover:scale-105 ease-in-out duration-300"/>
-                    <p className="text-sm text-p mt-2">iPhone 11</p>
-                    <p className="text-xs text-orange-700">&nbsp;</p>
-                </a>
+                
+                {data?.map((item) => {
+                    return(
+                        <>
+                        {item.name !== "iPhone SE" && item.name !== "iPhone 11" ?
+                                <a href="#" className="inline-block text-center py-2 px-4">
+                                    <img src={Image11} alt="" className="inline-block cursor-pointer hover:scale-105 ease-in-out duration-300"/>
+                                    <p className="text-sm text-p mt-2">{item.name}</p>
+                                    {item.name !== "iPhone 12" ? 
+                                        <p className="text-xs text-orange-700">Baru</p>
+                                        :
+                                        <p className="text-xs text-orange-700">&nbsp;</p>
+                                    }
+                                </a>
+                            :
+                            <>
+                            {item.name === "iPhone SE" ? 
+                                <Link to="/iphone-se" className="inline-block text-center py-2 px-4">
+                                    <img src={Image12} alt="" className="inline-block cursor-pointer hover:scale-105 ease-in-out duration-300"/>
+                                    <p className="text-sm text-p mt-2">{item.name}</p>
+                                    <p className="text-xs text-orange-700">Baru</p>
+                                </Link>
+                                :
+                                <a href="#" className="inline-block text-center py-2 px-4">
+                                    <img src={Image13} alt="" className="inline-block cursor-pointer hover:scale-105 ease-in-out duration-300"/>
+                                    <p className="text-sm text-p mt-2">iPhone 11</p>
+                                    <p className="text-xs text-orange-700">&nbsp;</p>
+                                </a>
+                            }
+                            </>
+                        }
+                    </>
+                    )
+                })}
+               
                 <a href="#" className="inline-block text-center py-2 px-4">
                     <img src={Image14} alt="" className="inline-block cursor-pointer hover:scale-105 ease-in-out duration-300"/>
                     <p className="text-sm text-p mt-2">Bandingkan</p>

@@ -233,8 +233,8 @@ export default function Home() {
                     <p className=" text-slate-600 md:text-lg xl:font-semibold xl:text-xl">Jelajahi semua model AirPods dan temukan yang terbaik untuk Anda.</p>
                     <a href="#" className='text-link hover:underline mt-2 inline-block xl:font-semibold xl:text-lg'>Selengkapnya<i class='bx bx-chevron-right relative top-0.5'></i></a>
                 </div>
-                <img src={Airpods} alt="" className=" absolute bottom-0 md:hidden" />
-                <img src={Airpods_1} alt="" className=" absolute bottom-0 md:inline-block hidden md:left-24 md:bottom-4 xl:hidden" />
+                <img src={Airpods} alt="" className=" absolute bottom-0 left-1/2 right-1/2 -translate-x-60 md:hidden" />
+                <img src={Airpods_1} alt="" className=" absolute bottom-0 md:inline-block hidden md:left-1/2 md:right-1/2 md:-translate-x-72 md:bottom-4 xl:hidden" />
                 <img src={Airpods_2} alt="" className=" absolute bottom-0 xl:inline-block hidden xl:left-24 xl:bottom-4 2xl:left-56" />
             </div>
 
